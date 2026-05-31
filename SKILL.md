@@ -1,18 +1,11 @@
 ---
 name: test-execution
 description: Orchestrate test execution — run unit, integration, and E2E tests, collect coverage reports, and analyze failures. Use when running tests, checking coverage, debugging test failures, or validating code changes before merge.
-version: "1.0.0"
 license: Apache-2.0
-allowed-tools:
-  - run_unit_tests
-  - run_integration_tests
-  - run_e2e_tests
-  - run_specific_tests
-  - get_results
-  - get_coverage
-  - get_test_logs
-tags: [devops, testing, coverage, quality, validation]
+compatibility: Requires mcp-test-runner server connected.
+allowed-tools: [run_unit_tests, run_integration_tests, run_e2e_tests, run_specific_tests, get_results, get_coverage, get_test_logs]
 metadata:
+  category: engineering
   author: Zavora AI
   mcp-server: mcp-test-runner
   success-criteria:
